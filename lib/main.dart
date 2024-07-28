@@ -3,6 +3,7 @@ import 'package:smit_tasks/task.dart';
 import 'package:smit_tasks/task3.dart';
 import 'package:smit_tasks/task4.dart';
 import 'package:smit_tasks/task5.dart';
+import 'package:smit_tasks/task6.dart';
 
 void main() {
   runApp(const MyApp());
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: screen5(),
+      home: screen6(),
     );
   }
 }
