@@ -1,16 +1,18 @@
 import 'package:flutter/material.dart';
 
-class screen3 extends StatefulWidget {
-  const screen3({super.key});
+class screen5 extends StatefulWidget {
+  const screen5({super.key});
 
   @override
-  State<screen3> createState() => _screen3State();
+  State<screen5> createState() => _screen5State();
 }
 
-class _screen3State extends State<screen3> {
+class _screen5State extends State<screen5> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return 
+
+ Scaffold(
       backgroundColor: const Color.fromARGB(255, 4, 62, 156),
       appBar: AppBar(
         leading:const Icon(Icons.line_weight_outlined, size: 30, color: Colors.white,),
@@ -47,10 +49,10 @@ class _screen3State extends State<screen3> {
         height: 20,
        ),
        Container(
-        height: 641,
+        height: 616,
         decoration:const BoxDecoration(
           color: Colors.white,
-          borderRadius: BorderRadius.all(Radius.circular(20)),
+          borderRadius: BorderRadius.only(topLeft: Radius.circular(20), topRight: Radius.circular(20)),
         ),
         
         child: Column(
@@ -65,7 +67,7 @@ class _screen3State extends State<screen3> {
                     height: 180,
                     width: 180,
                     decoration: const BoxDecoration(
-                      color: Colors.white,
+                     color: Color.fromARGB(255, 179, 209, 252),
                       borderRadius: BorderRadius.all(Radius.circular(20)), boxShadow: [
                        BoxShadow(
                         color: Colors.black26,
@@ -81,18 +83,10 @@ class _screen3State extends State<screen3> {
                         child: Container(
                           height: 100,
                           width: 100,
-                          decoration: BoxDecoration(
-                            color:const Color.fromARGB(255, 121, 169, 240),
-                            borderRadius: BorderRadius.circular(100),
-                             boxShadow: const [
-                       BoxShadow(
-                        color: Colors.black26,
-                        blurRadius: 20,
-                        offset: Offset(0, 0),
-                ),],
-                          ),
-                         
-                            child: const Icon(Icons.check_circle_outline_outlined,color: Colors.white, size: 60,),
+                          
+                           child: ClipRRect(
+                            borderRadius: BorderRadius.circular(10),
+                            child: Image.asset('assets/1.jpeg',fit: BoxFit.cover,)),
                           ),
                       ),
                         const Text('Mcqs', style: TextStyle(
@@ -106,7 +100,7 @@ class _screen3State extends State<screen3> {
                     height: 180,
                     width: 180,
                     decoration: const BoxDecoration(
-                      color: Colors.white,
+                      color: Color.fromARGB(255, 179, 209, 252),
                       borderRadius: BorderRadius.all(Radius.circular(20)), boxShadow: [
                        BoxShadow(
                         color: Colors.black26,
@@ -122,23 +116,16 @@ class _screen3State extends State<screen3> {
                         child: Container(
                           height: 100,
                           width: 100,
-                          decoration: BoxDecoration(
-                            color:const Color.fromARGB(255, 121, 169, 240),
-                            borderRadius: BorderRadius.circular(100),
-                             boxShadow: const [
-                       BoxShadow(
-                        color: Colors.black26,
-                        blurRadius: 20,
-                        offset: Offset(0, 0),
-                ),],
-                          ),
                          
-                            child:const Icon(Icons.quiz_outlined,color: Colors.white, size: 60,),
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(10),
+                            child: Image.asset('assets/2.jpg',fit: BoxFit.cover,)),
+                            
                           ),
                       ),
                        const Text('Quiz', style: TextStyle(
                           fontSize: 25,
-                          fontWeight: FontWeight.bold
+                          fontWeight: FontWeight.bold,
                         ),)
                       ],
                     ),
@@ -157,7 +144,7 @@ class _screen3State extends State<screen3> {
                     height: 180,
                     width: 180,
                     decoration: const BoxDecoration(
-                      color: Colors.white,
+                      color: Color.fromARGB(255, 179, 209, 252),
                       borderRadius: BorderRadius.all(Radius.circular(20)), boxShadow: [
                        BoxShadow(
                         color: Colors.black26,
@@ -173,18 +160,11 @@ class _screen3State extends State<screen3> {
                         child: Container(
                           height: 100,
                           width: 100,
-                          decoration: BoxDecoration(
-                            color:const Color.fromARGB(255, 121, 169, 240),
-                            borderRadius: BorderRadius.circular(100),
-                             boxShadow: const [
-                       BoxShadow(
-                        color: Colors.black26,
-                        blurRadius: 20,
-                        offset: Offset(0, 0),
-                ),],
-                          ),
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(10),
+                            child: Image.asset('assets/3.jpeg',fit: BoxFit.cover,)),
                          
-                            child: const Icon(Icons.note_rounded,color: Colors.white, size: 60,),
+                         
                           ),
                       ),
                        const Text('Papers', style: TextStyle(
@@ -198,7 +178,7 @@ class _screen3State extends State<screen3> {
                     height: 180,
                     width: 180,
                     decoration: const BoxDecoration(
-                      color: Colors.white,
+                      color: Color.fromARGB(255, 179, 209, 252),
                       borderRadius: BorderRadius.all(Radius.circular(20)), boxShadow: [
                        BoxShadow(
                         color: Colors.black26,
@@ -214,18 +194,10 @@ class _screen3State extends State<screen3> {
                         child: Container(
                           height: 100,
                           width: 100,
-                          decoration: BoxDecoration(
-                            color:const Color.fromARGB(255, 121, 169, 240),
-                            borderRadius: BorderRadius.circular(100),
-                             boxShadow: const [
-                       BoxShadow(
-                        color: Colors.black26,
-                        blurRadius: 20,
-                        offset: Offset(0, 0),
-                ),],
-                          ),
-                         
-                            child:const Icon(Icons.picture_as_pdf,color: Colors.white, size: 60,),
+                         child: ClipRRect(
+                            borderRadius: BorderRadius.circular(10),
+                            child: Image.asset('assets/4.png',fit: BoxFit.cover,)),
+                            
                           ),
                       ),
                        const Text('PDF', style: TextStyle(
@@ -249,7 +221,7 @@ class _screen3State extends State<screen3> {
                     height: 180,
                     width: 180,
                     decoration: const BoxDecoration(
-                      color: Colors.white,
+                      color: Color.fromARGB(255, 179, 209, 252),
                       borderRadius: BorderRadius.all(Radius.circular(20)), boxShadow: [
                        BoxShadow(
                         color: Colors.black26,
@@ -265,18 +237,12 @@ class _screen3State extends State<screen3> {
                         child: Container(
                           height: 100,
                           width: 100,
-                          decoration: BoxDecoration(
-                            color:const Color.fromARGB(255, 121, 169, 240),
-                            borderRadius: BorderRadius.circular(100),
-                             boxShadow: const [
-                       BoxShadow(
-                        color: Colors.black26,
-                        blurRadius: 20,
-                        offset: Offset(0, 0),
-                ),],
-                          ),
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(10),
+                             child: Image.asset('assets/5.jpeg',fit: BoxFit.cover,)),
+                            
                          
-                            child: const Icon(Icons.search_outlined,color: Colors.white, size: 60,),
+                           
                           ),
                       ),
                       const  Text('Jobs', style: TextStyle(
@@ -291,7 +257,7 @@ class _screen3State extends State<screen3> {
                     height: 180,
                     width: 180,
                     decoration: const BoxDecoration(
-                      color: Colors.white,
+                     color: Color.fromARGB(255, 179, 209, 252),
                       borderRadius: BorderRadius.all(Radius.circular(20)), boxShadow: [
                        BoxShadow(
                         color: Colors.black26,
@@ -307,18 +273,11 @@ class _screen3State extends State<screen3> {
                         child: Container(
                           height: 100,
                           width: 100,
-                          decoration: BoxDecoration(
-                            color:const Color.fromARGB(255, 121, 169, 240),
-                            borderRadius: BorderRadius.circular(100),
-                             boxShadow: const [
-                       BoxShadow(
-                        color: Colors.black26,
-                        blurRadius: 20,
-                        offset: Offset(0, 0),
-                ),],
-                          ),
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(10),
+                             child: Image.asset('assets/6.png',fit: BoxFit.cover,)),
                          
-                            child:const Icon(Icons.people_outline_rounded, color:Colors.white,size: 60,),
+                           
                           ),
                       ),
                        const Text('About', style: TextStyle(

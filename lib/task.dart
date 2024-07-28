@@ -1,16 +1,17 @@
 import 'package:flutter/material.dart';
 
-class screen3 extends StatefulWidget {
-  const screen3({super.key});
+class screen4 extends StatefulWidget {
+  const screen4({super.key});
 
   @override
-  State<screen3> createState() => _screen3State();
+  State<screen4> createState() => _screen4State();
 }
 
-class _screen3State extends State<screen3> {
+class _screen4State extends State<screen4> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return 
+ Scaffold(
       backgroundColor: const Color.fromARGB(255, 4, 62, 156),
       appBar: AppBar(
         leading:const Icon(Icons.line_weight_outlined, size: 30, color: Colors.white,),
@@ -47,10 +48,10 @@ class _screen3State extends State<screen3> {
         height: 20,
        ),
        Container(
-        height: 641,
+        height: 616,
         decoration:const BoxDecoration(
           color: Colors.white,
-          borderRadius: BorderRadius.all(Radius.circular(20)),
+           borderRadius: BorderRadius.only(topLeft: Radius.circular(20), topRight: Radius.circular(20)),
         ),
         
         child: Column(
@@ -79,12 +80,12 @@ class _screen3State extends State<screen3> {
                           Padding(
                         padding:  const EdgeInsets.all(15.0),
                         child: Container(
-                          height: 100,
-                          width: 100,
-                          decoration: BoxDecoration(
-                            color:const Color.fromARGB(255, 121, 169, 240),
-                            borderRadius: BorderRadius.circular(100),
-                             boxShadow: const [
+                          height: 110,
+                          width: 110,
+                          decoration: const BoxDecoration(
+                            color:Color.fromARGB(255, 121, 169, 240),
+                            borderRadius: BorderRadius.all(Radius.circular(20)),
+                             boxShadow: [
                        BoxShadow(
                         color: Colors.black26,
                         blurRadius: 20,
@@ -92,7 +93,9 @@ class _screen3State extends State<screen3> {
                 ),],
                           ),
                          
-                            child: const Icon(Icons.check_circle_outline_outlined,color: Colors.white, size: 60,),
+                            child: ClipRRect(
+                            borderRadius: BorderRadius.circular(10),
+                            child: Image.asset('assets/1.jpeg',fit: BoxFit.cover,)),
                           ),
                       ),
                         const Text('Mcqs', style: TextStyle(
