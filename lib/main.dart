@@ -1,11 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:smit_tasks/home_task1.dart';
-import 'package:smit_tasks/home_task2.dart';
-import 'package:smit_tasks/task.dart';
-import 'package:smit_tasks/task3.dart';
-import 'package:smit_tasks/task4.dart';
-import 'package:smit_tasks/task5.dart';
-import 'package:smit_tasks/task6.dart';
+import 'package:smit_tasks/task7.dart';
 
 void main() {
   runApp(const MyApp());
@@ -24,10 +18,12 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: home2()
-      //homedark1()
-      //home1(),
-      //screen6(),
+      home: Task7(),
+      //home3()
+      //home2()          //home task 2
+      //homedark1()         //hometask1 dark
+       //  screen6(),        //task 6
+       // home1(),           //hometask1 light
     );
   }
 }

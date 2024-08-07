@@ -11,9 +11,9 @@ class _screen6State extends State<screen6> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 14, 132, 18),
+      backgroundColor:const Color.fromARGB(255, 0, 243, 203),
       appBar: AppBar(
-       backgroundColor: const Color.fromARGB(255, 14, 132, 18),
+       backgroundColor:const Color.fromARGB(255, 0, 243, 203),
       ),
       body:  Center(
        child: Container(

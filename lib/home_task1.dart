@@ -1,4 +1,4 @@
-///////////********************light mode *********************** */////////////
+// /////////********************light mode *********************** */////////////
 // import 'package:flutter/material.dart';
 
 // class home1 extends StatefulWidget {

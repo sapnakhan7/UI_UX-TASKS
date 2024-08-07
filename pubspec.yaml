@@ -37,6 +37,7 @@ dependencies:
   cupertino_icons: ^1.0.2
 
 dev_dependencies:
+
   flutter_test:
     sdk: flutter
 
@@ -46,6 +47,7 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^2.0.0
+  font_awesome_flutter: ^10.1.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -78,6 +80,10 @@ flutter:
     - assets/BEER-Photoroom.png
     - assets/PIZZA.png
     - assets/DONUT-Photoroom.png
+    - assets/shoes-Photoroom.png
+    - assets/heart.png
+    - assets/shoes2-Photoroom.png
+    - assets/shoes3.png
     - assets/person.jpg
     
 
